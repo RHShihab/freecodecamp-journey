@@ -1,0 +1,59 @@
+body{
+    color: aliceblue;
+    background-color: darkslateblue;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+#title, #description{
+    text-align: center;
+}
+
+#survey-form{
+    background-color: rgba(40, 40, 70, 0.8);
+    padding: 30px;
+    width: 60vw;
+    max-width: 600px;
+    min-width: 400px;
+    margin: 50px auto;
+}
+
+label{
+    display: block;
+    /* margin: 15px auto; */
+}
+
+fieldset{
+    border: 0;
+    padding: 12px 0;
+}
+fieldset:first-of-type{
+    padding-top: 0;
+}
+.input-elem{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2px 0;
+    height: 2em;
+    padding: 3px;
+    font-size: 16px;
+    border-radius: 7px;
+}
+.text-area{
+    height: 6em;
+}
+.inline{
+    width: unset;
+    height: unset;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+#submit{
+    display: block; /*why did it fix the center issue*/
+    font-size: 20px;
+    border-radius: 7px;
+    height: 2em;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
