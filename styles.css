@@ -37,13 +37,20 @@ body {
   width: 100%;
 }
 .projectCard {
+  transition: 0.2s;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   box-shadow: 0 0 10px 0px rgb(140, 140, 140);
   width: 300px;
 }
+.projectCard:hover .projectDetails {
+  border-top: 2px solid rgb(170, 170, 170);
+  height: 100px;
+  transition: 0.2s;
+}
 .projectCard:hover {
   scale: 1.03;
+  transition: 0.2s;
 }
 .projectTitle {
   font-size: 21px;
@@ -54,18 +61,22 @@ body {
 .projectSubtitle {
   padding: 10px;
   text-align: center;
-  border-bottom: 2px solid rgb(170, 170, 170);
 }
 
 .projectDetails {
+  transition: 0.2s;
+  height: 0;
+  overflow: hidden;
   padding-top: 10px;
   padding-left: 20px;
 }
 
-.projectDetails>ul {
+.projectDetails > ul {
   padding: 0px 20px 20px 20px;
 }
 
 @media (max-width: 726px) {
-  
+  .projectDetails {
+    height: 100px;
+  }
 }
