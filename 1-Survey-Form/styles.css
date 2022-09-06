@@ -1,6 +1,6 @@
 body{
     color: aliceblue;
-    background-color: darkslateblue;
+    background-color: #483d8b;
     font-family: Tahoma;
     font-size: 16px;
 }
@@ -56,4 +56,23 @@ fieldset:first-of-type{
     width: 30%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#home-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #9785da;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    z-index: 99;
+}
+#home-button>img{
+    transform: translateY(11px);
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: auto;
 }
