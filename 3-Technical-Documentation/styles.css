@@ -35,6 +35,9 @@
     border-left: 3px solid #04AA6D;
     /* border-radius: 3px; */
   }
+  footer{
+    display: none;
+  }
 }
 .main-section {
   width: 85%;
@@ -161,8 +164,8 @@
   margin: auto;
 }
 footer{
-  width: 100%;
-  padding: 20px;
+  width: 100vw - 20px;
+  padding: 20px 0;
   /* height: 50px; */
   background-color: #b0b0b0;
   vertical-align: middle;

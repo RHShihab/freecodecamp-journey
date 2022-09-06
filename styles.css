@@ -77,6 +77,9 @@ body {
 }
 
 @media (max-width: 726px) {
+  body {
+    width: unset;
+  }
   .projectDetails {
     height: 100px;
   }
