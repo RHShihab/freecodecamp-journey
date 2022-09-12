@@ -8,79 +8,99 @@
     <title>Shihab's FreeCodeCamp Journey</title>
   </head>
   <body>
-    <div class="head">
-        <h1 class="title">Hellooo... This is Shihab</h1>
-        <p class="subtitle">
-          <p>This site documents all the certification projects required for <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">freecodecamp</a>. </p>
-          <p>I will be adding more projects and features as I proceed with the course and learn more stuff</p>
-          <p>To see the codes behind this projects please visit <a href="https://github.com/RHShihab/freecodecamp-journey">my github repository</a>.</p>
-        </p>
-    </div>
-    <hr>
-    <h1 class="title">List of certification projects</h1>
+    <header id="header">
+      <nav id="navbar">
+        <a href="#welcome-section" class="nav-links"><div>About</div></a>
+        <a href="#projects" class="nav-links"><div>Projects</div></a>
+        <a href="#contact" class="nav-links"><div>Contact</div></a>
+      </nav>
+    </header>
     <main>
-      <div class="projectGallery">
-        <a href="1-Survey-Form/index.html"
-          ><div class="projectCard">
-            <img
-              src="snapshots/1-surveyForm.png"
-              alt="snapshot of the project"
-              class="projectImg"
-            />
-            <div class="projectTitle">Survey Form</div>
-            <div class="projectSubtitle">just a form with some details</div>
-            <div class="projectDetails">
-              Features:
-              <ul>
-                <li>Written in semantic elements</li>
-                <li>form width changes with the device width</li>
-              </ul>
-            </div>
-          </div></a
-        >
-        <a href="2-Tribute-page/index.html"
-          ><div class="projectCard">
-            <img src="snapshots/2-tributePage.png" alt="" class="projectImg" />
-            <div class="projectTitle">Tribute Page</div>
-            <div class="projectSubtitle">A tribute to Kermit</div>
-            <div class="projectDetails">
-              Features
-              <ul>
-                <li>uses flexbox to re-align the image and text content</li>
-              </ul>
-            </div>
-          </div></a
-        >
-        <!-- a>div.projectCard>img.projectImg+div.projectTitle+div.projectDetails -->
-        
-        <a href="3-Technical-Documentation/index.html">
-          <div class="projectCard">
-            <img src="snapshots/3-technicalDocumentation.png" alt="" class="projectImg">
-            <div class="projectTitle">Technical Documentation</div>
-            <div class="projectSubtitle">a page with navbar and media query</div>
-            <div class="projectDetails">
-              Features
-              <ul>
-                <li>uses media query</li>
-              </ul>
-            </div>
+      <section id="welcome-section">
+        <div>
+            <h1 class="title">Hellooo... This is Shihab</h1>
+            <p class="subtitle">
+              <p>This site documents my journey in Freecodecamp's <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/" target="_blank" class="link">Responsive Web Design</a> course. All projects required for certification are added below.</p>
+              <p>I will be adding more projects and features as I proceed with the course and learn more stuff.</p>
+              <!-- <p>To see the codes behind this projects please visit <a href="https://github.com/RHShihab/freecodecamp-journey">my github repository</a>.</p> -->
+            </p>
           </div>
-        </a>
-        <a href="4-Product-Landing-Page/index.html">
-          <div class="projectCard">
-            <img src="snapshots/4-productLandingPage.png" alt="" class="projectImg">
-            <div class="projectTitle">Product Landing Page</div>
-            <div class="projectSubtitle">It's not about a product. It's all about skills</div>
-            <div class="projectDetails">
-              Features
-              <ul>
-                <li>Multiple grid layouts</li>
-                <li>Lots of flex</li>
-                <li>Lots of media query</li>
-              </ul>
+      </section>
+      <section id="projects">
+        <h1 class="title" id="project-title">List of certification projects</h1>
+        <div class="projectGallery" >
+          <a href="1-Survey-Form/index.html"
+            ><div class="projectCard">
+              <img
+                src="snapshots/1-surveyForm.png"
+                alt="snapshot of the project"
+                class="projectImg"
+              />
+              <div class="projectTitle">Survey Form</div>
+              <div class="projectSubtitle">just a form with some details</div>
+              <div class="projectDetails">
+                Features:
+                <ul>
+                  <li>Written in semantic elements</li>
+                  <li>form width changes with the device width</li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
+          <a href="2-Tribute-page/index.html"
+            ><div class="projectCard">
+              <img src="snapshots/2-tributePage.png" alt="" class="projectImg" />
+              <div class="projectTitle">Tribute Page</div>
+              <div class="projectSubtitle">A tribute to Kermit</div>
+              <div class="projectDetails">
+                Features
+                <ul>
+                  <li>uses flexbox to re-align the image and text content</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+          <a href="3-Technical-Documentation/index.html">
+            <div class="projectCard">
+              <img src="snapshots/3-technicalDocumentation.png" alt="" class="projectImg">
+              <div class="projectTitle">Technical Documentation</div>
+              <div class="projectSubtitle">a page with navbar and media query</div>
+              <div class="projectDetails">
+                Features
+                <ul>
+                  <li>uses media query</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+          <a href="4-Product-Landing-Page/index.html">
+            <div class="projectCard">
+              <img src="snapshots/4-productLandingPage.png" alt="" class="projectImg">
+              <div class="projectTitle">Product Landing Page</div>
+              <div class="projectSubtitle">It's not about a product. It's all about skills</div>
+              <div class="projectDetails">
+                Features
+                <ul>
+                  <li>Multiple grid layouts</li>
+                  <li>Lots of flex</li>
+                  <li>Lots of media query</li>
+                </ul>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="contact">
+        <h1 class="title">Here are my social accounts</h1>
+        <div class="social-links">
+          <a href="https://github.com/RHShihab" target="_blank" rel="noopener noreferrer"><img src="icons/github.png" alt="Github: " class="icon"> /RHShihab</a>
+          <a href="https://www.linkedin.com/in/rhshihab/" target="_blank" rel="noopener noreferrer"><img src="icons/linkedIn.png" alt="LinkedIn: " class="icon"> /rhshihab/</a>
+          <a href="mailto:shihab.hasan3322@gmail.com" target="_blank" rel="noopener noreferrer"><img src="icons/mail.png" alt="Email: " class="icon"> shihab.hasan3322@gmail.com</a>
+          <footer>
+            to see the codes behind these projects please visit <a href="https://github.com/RHShihab/freecodecamp-journey" target="_blank" rel="noopener noreferrer" id="no-wrap">github.com/RHShihab/freecodecamp-journey</a>
+          </footer>
+        </div>
+      </section>
     </main>
   </body>
 </html>
