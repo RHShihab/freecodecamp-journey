@@ -1,78 +1,101 @@
-body{
-    color: aliceblue;
-    background-color: #483d8b;
-    font-family: Tahoma;
-    font-size: 16px;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-#title, #description{
-    text-align: center;
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px rgb(155, 130, 238);
+  border-radius: 0px;
 }
 
-#survey-form{
-    background-color: rgba(40, 40, 70, 0.8);
-    padding: 30px;
-    width: 60vw;
-    max-width: 600px;
-    min-width: 280px;
-    margin: 50px auto;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9785da;
+  border-radius: 10px;
 }
 
-label{
-    display: block;
-    /* margin: 15px auto; */
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3c2882;
 }
 
-fieldset{
-    border: 0;
-    padding: 12px 0;
-}
-fieldset:first-of-type{
-    padding-top: 0;
-}
-.input-elem{
-    box-sizing: border-box;
-    width: 100%;
-    margin: 2px 0;
-    height: 2em;
-    padding: 3px;
-    font-size: 16px;
-    border-radius: 7px;
-}
-.text-area{
-    height: 6em;
-}
-.inline{
-    width: unset;
-    height: unset;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-#submit{
-    display: block; /*why did it fix the center issue*/
-    font-size: 20px;
-    border-radius: 7px;
-    height: 2em;
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
+body {
+  color: aliceblue;
+  background-color: #483d8b;
+  font-family: Tahoma;
+  font-size: 16px;
 }
 
-#home-button{
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    height: 50px;
-    width: 50px;
-    border-radius: 25px;
-    background-color: #9785da;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-    z-index: 99;
+#title,
+#description {
+  text-align: center;
 }
-#home-button>img{
-    transform: translateY(11px);
-    display: block;
-    width: 50%;
-    height: 50%;
-    margin: auto;
+
+#survey-form {
+  background-color: rgba(40, 40, 70, 0.8);
+  padding: 30px;
+  width: 60vw;
+  max-width: 600px;
+  min-width: 280px;
+  margin: 50px auto;
+}
+
+label {
+  display: block;
+  /* margin: 15px auto; */
+}
+
+fieldset {
+  border: 0;
+  padding: 12px 0;
+}
+fieldset:first-of-type {
+  padding-top: 0;
+}
+.input-elem {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 2px 0;
+  height: 2em;
+  padding: 3px;
+  font-size: 16px;
+  border-radius: 7px;
+}
+.text-area {
+  height: 6em;
+}
+.inline {
+  width: unset;
+  height: unset;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#submit {
+  display: block; /*why did it fix the center issue*/
+  font-size: 20px;
+  border-radius: 7px;
+  height: 2em;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#home-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #9785da;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  z-index: 99;
+}
+#home-button > img {
+  transform: translateY(11px);
+  display: block;
+  width: 50%;
+  height: 50%;
+  margin: auto;
 }
