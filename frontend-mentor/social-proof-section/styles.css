@@ -75,10 +75,19 @@ main {
 /* .rating-card::before{
 } */
 .review-section{
+  margin-top: 70px;
   display: flex;
   justify-content: space-between;
 }
-
+.review-heading{
+  display: flex;
+  margin-bottom: 30px;
+}
+.reviewer-image{
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
 .review-card{
   background-color: var(--dark-grayish-magenta);
   width: calc(31.5% - 80px) ;
