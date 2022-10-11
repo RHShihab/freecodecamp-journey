@@ -1,3 +1,8 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .top-bg-desktop {
   width: 80%;
   position: absolute;
@@ -25,7 +30,10 @@
   --medium: 500;
   --bold: 700;
 }
-
+body{
+  background: url(images/bg-pattern-top-desktop.svg) left top no-repeat, url(images/bg-pattern-bottom-desktop.svg) right bottom no-repeat;
+  min-height: 100vh;
+}
 main {
   font-family: "League Spartan";
   font-size: 25px;
@@ -48,10 +56,13 @@ main {
 
 .heading {
   width: 37%;
+  margin-bottom: 40px;
 }
 .heading .h1 {
   font-size: 70px;
   font-weight: 900;
+  margin-bottom: 40px;
+
   /* want to make it bolder */
 }
 .rating-cards {
@@ -76,8 +87,10 @@ main {
 .rating-card:nth-of-type(3) {
   margin-left: 25%;
 }
-/* .rating-card::before{
-} */
+.rating-card::before{
+  content: '⭐⭐⭐⭐⭐';
+  margin-right: 10px;
+}
 .review-section {
   margin-top: 70px;
   display: flex;
@@ -96,7 +109,7 @@ main {
 .review-card {
   font-size: 22px;
   background-color: var(--very-dark-magenta);
-  width: calc(31.5% - 80px);
+  width: calc(31.5%);
   border-radius: 12px;
   padding: 40px;
   height: fit-content;
@@ -159,7 +172,9 @@ main {
   }
   .review-card {
     font-size: 22px;
-    width: 80%;
+    padding: 20px;
+    width: 98%;
+    margin: auto;
   }
   .review-card:nth-of-type(3) {
     margin-top: 20px;
@@ -185,4 +200,8 @@ main {
   width: 50%;
   height: 50%;
   margin: auto;
+}
+.attribution{
+  margin-top: 40px;
+  margin-bottom: 20px;
 }

@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-family: "Space Mono";
+  font-size: 22px;
+}
+:root {
+  /* primary */
+  --strong-cyan: hsl(172, 67%, 45%);
+
+  /* neutral */
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+/* hiding the arrows in the number field */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+body {
+  width: 100%;
+  background-color: var(--light-grayish-cyan);
+}
+fieldset {
+  border: none;
+}
+legend {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.sample {
+  height: 100vh;
+}
+.card {
+  max-width: 870px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 20px;
+}
+.input {
+  width: 50%;
+  padding: 20px;
+}
+.full-width-field {
+  display: relative;
+  width: 100%;
+  padding: 5px 5px;
+  background-color: var(--very-light-grayish-cyan);
+  color: var(--grayish-cyan);
+  justify-content: space-between;
+}
+.full-width-field > input[type="number"] {
+  background-color: var(--very-light-grayish-cyan);
+  position: relative;
+  text-align: right;
+  width: 100%;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: var(--grayish-cyan);
+  border: none;
+}
+.full-width-field>input:focus{
+    outline: none;
+}
+.full-width-field > span{
+  /* z-index: 2; */
+  position: absolute;
+}
+
+.small-width-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+.small-width-field > input {
+  width: 100%;
+}
+#custom {
+  text-align: center;
+}
