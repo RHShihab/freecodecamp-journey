@@ -28,7 +28,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
@@ -37,6 +36,12 @@ body {
   width: 100%;
   background-color: var(--light-grayish-cyan);
 }
+
+#logo{
+  display: block;
+  margin: 100px auto 60px auto;
+}
+
 fieldset {
   border: none;
 }
