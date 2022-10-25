@@ -12,7 +12,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 45%, 44%); font-size: inherit; }
   </style>
 </head>
 <body>
@@ -21,27 +21,30 @@
       <fieldset>
         <legend>Bill</legend>
           <div class="full-width-field">
-            <span>$</span>
+            <img src="images/icon-dollar.svg" alt="$">
             <input type="number" name="total-bill" id="total-bill" placeholder="0">
           </div>
       </fieldset>
       <fieldset>
         <legend>Select Tip %</legend>
         <label for="tip" class="small-width-field">
-          <input type="button" value="5%">
-          <input type="button" value="10%">
-          <input type="button" value="15%">
-          <input type="button" value="25%">
-          <input type="button" value="50%">
+          <button class="tip" id="five" value="5">5%</button>
+          <button class="tip" id="ten" value="10">10%</button>
+          <button class="tip" id="fifteen" value="15">15%</button>
+          <button class="tip" id="twentyfive" value="25">25%</button>
+          <button class="tip" id="fifty" value="50">50%</button>
           <input type="number" placeholder="Custom" id="custom">
         </label>
       </fieldset>
       <fieldset>
-        <legend>Number of People</legend>
-        <label for="total-bill" class="full-width-field">
-          <span>$</span>
-          <input type="number" name="total-bill" id="total-bill" placeholder="0">
-        </label>
+        <div class="inline">
+          <legend>Number of People</legend>
+          <div id="notZeroText"></div>
+        </div>
+        <div class="full-width-field">
+          <img src="images/icon-person.svg" alt="😏">
+          <input type="number" name="n-people" id="n-people" placeholder="0" value="1">
+        </div>
       </fieldset>
     </form>
     <section class="output">
@@ -51,24 +54,25 @@
             <p>Tip Amount</p>
             <p>/ person</p>
           </div>
-          <div class="output-text">$0.00</div>
+          <div class="output-text" id="tip-output">$0.00</div>
         </div>
         <div class="output-set">
           <div class="label">
             <p>Total</p>
             <p>/ person</p>
           </div>
-          <div class="output-text">$0.00</div>
+          <div class="output-text" id="total-output">$0.00</div>
         </div>
       </div>
-      <input type="button" value="RESET" id="reset">
+      <button id="reset">RESET</button>
     </section>
   </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Rahat Hasan Shihab</a>.
   </div>
   <img src="design/active-states.jpg" alt="" class="sample">
+  <script src="index.js"></script>
 </body>
 </html>
